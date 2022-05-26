@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+:root {
+  --Bai-Jamjuree: 'Bai Jamjuree', sans-serif;
+
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+body {
+  font-family: var(--Bai-Jamjuree);
+  color: var(--Dark-Grayish-Blue);
+  font-size: 18px;
+  text-align: center; 
+  background-image: url(/images/bg-header-mobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px 10px;
+}
+
+
+.textos {
+  padding-top: 50px;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.parrafo {
+  line-height: 1.5;
+}
+
+.contenedor__btn {
+  margin-top: 40px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Strong-Cyan);
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 30px 0;
+  box-shadow: 0 5px 5px var(--Strong-Cyan) ;
+}
+
+.btn--mac {
+  background-color: var(--Light-Blue);
+  box-shadow: 0 5px 5px var(--Light-Blue) ;
+}
+
+
+.imagen__tech {
+  width: 90%;
+  margin: 40px 0;
+}
+
+.titulo--sub {
+  font-size: 1.5rem;
+  padding-top: 40px;
+}
+
+.icono {
+  margin-top: 50px;
+}
+
+.marcas__empresariales {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.logo__empresarial {
+  margin: 30px 0;
+}
+
+.pie {
+  background-color: rgb(229, 229, 231, 0.7);
+}
+
+.logo--pie {
+  width: 15%;
+  margin:40px 0;
+}
+
+.titulo__pie {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+.icono__redes {
+  padding: 40px 20px;
+}
+
+@media (min-width:768px) {
+
+  .contenedor {
+    font-size: 20px;
+    margin: 100px 80px;
+  }
+
+  .parrafo {
+    width: 60%;
+  }
+
+  .btn {
+    width: 200px;
+    display: inline-block;
+    
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+
+  .contenedor__info__pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagen__tech {
+    width: 600px;
+  }
+
+  .contenedor__texto__pc {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+  }
+
+  .titulo--sub {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .parrafo--pc {
+    font-size: 1rem;
+  }
+
+  .contenedor__info__peq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor__info__peq--col {
+    width: 100%;
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+
+  .marcas__empresariales {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .logo__empresarial {
+    width: 80px;
+    height: auto;
+  }
+
+  .pie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .textos__pie {
+   display: flex;
+   justify-content:flex-start;
+   width: 40%;
+  }
+
+  .logo--pie {
+    width: 40px;
+  }
+
+  
+
+}
